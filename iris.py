@@ -19,7 +19,7 @@ from sklearn import model_selection
 from sklearn.ensemble import VotingClassifier
 from matplotlib import pyplot as plt
 %matplotlib inline
-iris=pd.read_csv('C:\\Users\\Abinaya\\Desktop\\datasets_19_420_Iris.csv')
+iris=pd.read_csv('C:\\Users\\Desktop\\datasets_19_420_Iris.csv')
 iris.head()
 iris.describe()
 print(iris.shape)
@@ -38,7 +38,7 @@ X=array[:,1:5]
 Y=array[:,5]
 X_train,X_Validation,Y_train,Y_Validation=train_test_split(X,Y,test_size=0.2,random_state=1)
 #LOGISTIC REGRESSION
-#LINEAR DISCRIMINANT ANALYSIS,KNN,SVM,
+#LINEAR DISCRIMINANT ANALYSIS,KNN,SVM
 models=[]
 models.append(('LR',LogisticRegression(solver='liblinear',multi_class='ovr')))
 models.append(('LDA',LinearDiscriminantAnalysis()))
